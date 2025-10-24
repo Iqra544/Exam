@@ -22,6 +22,4 @@ export async function middleware(req) {
 }
 
 // Protect only dashboard route (you can add more)
-export const config = {
-  matcher: ["/dashboard"],
-};
+export const config = { matcher: ['/dashboard/:path*', '/profile/:path*', '/items/:path*'] };
